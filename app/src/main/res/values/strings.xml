@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TrafficLight</string>
+    <string name="stopText">Stop</string>
+    <string name="goText">Go</string>
+    <string name="waitText">Wait</string>
+</resources>

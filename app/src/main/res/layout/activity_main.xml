@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="411dp"
+        android:layout_height="522dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="400dp"
+            android:background="@color/dark"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="27dp"
+            android:gravity="center_horizontal|center_vertical">
+
+<!--            the style="@style/CircleStyle" is referencing the custom styles file I created-->
+<!--            The android:background is referencing the new drawable shapes I created-->
+            <View
+                android:id="@+id/redCircle"
+                style="@style/CircleStyle"
+                android:background="@drawable/circle_red" />
+            <View
+                android:id="@+id/yellowCircle"
+                style="@style/CircleStyle"
+                android:background="@drawable/circle_yellow" />
+            <View
+                android:id="@+id/greenCircle"
+                style="@style/CircleStyle"
+                android:background="@drawable/circle_green" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="149dp"
+            android:layout_height="54dp"
+            android:text="@string/stopText"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="458dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
