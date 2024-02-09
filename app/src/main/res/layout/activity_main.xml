@@ -46,7 +46,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/changeLightButton"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="149dp"
             android:layout_height="54dp"
