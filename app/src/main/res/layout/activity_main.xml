@@ -17,26 +17,30 @@
         app:layout_constraintVertical_bias="0.5">
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="150dp"
             android:layout_height="400dp"
+            android:layout_marginTop="26dp"
             android:background="@color/dark"
+            android:gravity="center_horizontal|center_vertical"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="27dp"
-            android:gravity="center_horizontal|center_vertical">
+            app:layout_constraintTop_toTopOf="parent">
 
-<!--            the style="@style/CircleStyle" is referencing the custom styles file I created-->
-<!--            The android:background is referencing the new drawable shapes I created-->
+            <!--            the style="@style/CircleStyle" is referencing the custom styles file I created-->
+            <!--            The android:background is referencing the new drawable shapes I created-->
             <View
                 android:id="@+id/redCircle"
                 style="@style/CircleStyle"
                 android:background="@drawable/circle_red" />
+
             <View
                 android:id="@+id/yellowCircle"
                 style="@style/CircleStyle"
                 android:background="@drawable/circle_yellow" />
+
             <View
                 android:id="@+id/greenCircle"
                 style="@style/CircleStyle"
@@ -47,13 +51,14 @@
 
         <Button
             android:id="@+id/changeLightButton"
-            style="@style/Widget.AppCompat.Button"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="149dp"
             android:layout_height="54dp"
+            android:layout_marginTop="32dp"
             android:text="@string/stopText"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="458dp" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
